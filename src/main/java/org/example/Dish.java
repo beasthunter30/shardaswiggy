@@ -12,4 +12,18 @@ public class Dish {
         this.type = type;
         this.price = price;
     }
+
+
+    public String getid(){
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "dishName='" + dish_name + '\'' +
+                ", restroId=" + id +
+                ", dishPrice=" + price +
+                '}';
+    }
 }

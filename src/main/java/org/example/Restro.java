@@ -8,7 +8,6 @@ public class Restro {
 
     Restro(String id,String restro_name,String type){
         this.id = id;
-        this.restro_name = restro_name;
-        this.type = type;
+        this.restro_name = restro_name;        this.type = type;
     }
 }
