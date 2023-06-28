@@ -40,37 +40,7 @@ public class App
             restroList.add(cntr,tempRestro);
             cntr++;
 
-
-            // int menuCntr=0;
-            // for (Dish dish: dishList)
-            // {
-            //  if(dish != null)
-            //  {
-            //   if(dish.getRestroId().equals(tempRestro.getId()))
-            //  {
-            //      tempMenu.add(dish);
-            //     menuCntr++;
-            // }
-            //}
-            // }
-
-
-
-            // for(Location location : locationList)
-            // {
-            //   if(location != null)
-            //   {
-            //       tempRestro.setLocation(location);
-            //   }
-            //}
-
         }
-
-        //for (Restro restro : restroList)
-        // {
-        //    if(restro != null)
-        //    System.out.println(restro);
-        // }
 
     }
 
@@ -94,12 +64,6 @@ public class App
             cntr++;
         }
 
-        // for (Dish dish: dishList)
-        // {
-        //    if(dish != null)
-        //        System.out.println(dish);
-        //}
-
     }
 
     void parseLocation() throws IOException
@@ -121,13 +85,6 @@ public class App
 
             cntr++;
         }
-
-        //for (Location l: locationList)
-        //{
-        //    if(l != null)
-        //    System.out.println(l);
-        //}
-
 
 
     }
@@ -225,17 +182,6 @@ public class App
             Integer tempQty = Integer.valueOf((orderDataList.get(i+1)));
             order.put(tenpDish,tempQty);
         }
-
-        // for (int i = 1,cntr=0; i < orderData.length; i+=2,cntr++)
-        // {
-        //orderDishes[cntr] = menu[(Integer.valueOf(orderData[i])-1)];
-        //    orderDishes[cntr] = menu.get((Integer.valueOf(orderData[i])-1));
-        // }
-
-        // for (int i = 2,cntr=0; i < orderData.length; i+=2,cntr++)
-        // {
-        //     orderQties[cntr] = Integer.valueOf(orderData[i]);
-        //  }
 
         System.out.println("You chose :"+orderRestroList.get(restroIndex-1).getName());
         int cntr = 1;
